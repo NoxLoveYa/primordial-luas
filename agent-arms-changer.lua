@@ -48,7 +48,7 @@ for _, team in ipairs(cs_teams) do
 
 	team_refs[is_t] = {
 		enabled = menu.add_checkbox("Agent Changer", string.format("Enable (%s)", teamname)),
-		model = menu.add_list("Agent Changer", string.format("Model (%s)", teamname), names, 1),
+		model = menu.add_list("Agent Changer", string.format("Model (%s)", teamname), names, 10),
 	}
 end
 
@@ -68,7 +68,7 @@ for _, team in ipairs(cs_teams) do
 
 	arm_refs[is_t] = {
 		enabled = menu.add_checkbox("Agent Changer", string.format("Enable Arms (%s)", teamname)),
-		model = menu.add_list("Agent Changer", string.format("Arms (%s)", teamname), names, 1),
+		model = menu.add_list("Agent Changer", string.format("Arms (%s)", teamname), names, 10),
 	}
 end
 
